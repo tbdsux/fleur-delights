@@ -1,9 +1,14 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      ...colors,
+    },
     fontFamily: {
-      sans: ['"Source Sans Pro"', 'sans-serif']
+      sans: ['"Source Sans Pro"', 'sans-serif'],
     },
     extend: {},
   },

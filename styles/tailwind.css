@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  background: url(/background.jpeg) rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
