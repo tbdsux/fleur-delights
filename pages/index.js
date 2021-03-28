@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Layout from "@components/Layout";
 import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 import { delights } from "@lib/delights";
 
@@ -61,6 +62,34 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<hr />
+
+			<section className="py-20 w-5/6 mx-auto text-center">
+				<h3 className="text-5xl font-black tracking-wide text-blueGray-700">
+					Contact Us
+				</h3>
+
+				<div>
+					<p className="text-2xl my-6 tracking-wide">
+						For orders or inquiries, please send us a message to{" "}
+						<span className="font-bold underline">
+							0927 416 0400
+						</span>{" "}
+						<br /> or message us at our Facebook page .
+					</p>
+					<a
+						href="https://web.facebook.com/delfleur2600"
+						className="bg-blueGray-500 text-white hover:bg-blueGray-600 py-3 px-8 text-xl tracking-wide"
+					>
+						@delfleur2600
+					</a>
+				</div>
+			</section>
+
+			<hr />
+
+			<Footer />
 		</Layout>
 	);
 }
