@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Layout from "@components/Layout";
 import Header from "@components/Header";
@@ -14,7 +15,7 @@ export default function Home() {
 			<hr />
 
 			{/* current menus */}
-			<section className="py-24 bg-gray-50">
+			<section id="delights" className="py-24 bg-gray-50">
 				<div className="w-5/6 mx-auto">
 					<h3 className="text-7xl font-black tracking-wide underline text-blueGray-700">
 						Available Delights
@@ -44,16 +45,17 @@ export default function Home() {
 								<ul className="w-5/6 mx-auto flex flex-col mt-4">
 									{item.prices.map((price) => (
 										<li key={item.prices.indexOf(price)}>
-											<a
-												href="#"
-												type="button"
-												className="py-3 my-1 bg-blueGray-500 hover:bg-blueGray-700 text-gray-100 w-full text-xl font-bold"
-											>
-												{price.deal}{" "}
-												<span className="font-black">
-													(Php {price.price})
-												</span>
-											</a>
+											<Link href="/order-now">
+												<a
+													type="button"
+													className="py-3 my-1 bg-blueGray-500 hover:bg-blueGray-700 text-gray-100 w-full text-xl font-bold"
+												>
+													{price.deal}{" "}
+													<span className="font-black">
+														(Php {price.price})
+													</span>
+												</a>
+											</Link>
 										</li>
 									))}
 								</ul>
