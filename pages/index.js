@@ -21,7 +21,7 @@ export default function Home() {
 						Available Delights
 					</h3>
 
-					<div className="grid grid-cols-3 gap-12 mt-10">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-10">
 						{delights.map((item) => (
 							<div
 								className="flex flex-col p-8 text-center shadow-lg border bg-white relative"
@@ -38,7 +38,7 @@ export default function Home() {
 									width={300}
 									objectFit="cover"
 								/>
-								<h4 className="text-3xl font-black tracking-wide text-blueGray-600">
+								<h4 className="text-3xl font-black tracking-wide text-blueGray-600 px-4">
 									{item.name}
 								</h4>
 
