@@ -37,7 +37,7 @@ export default function Header() {
       </nav>
 
       <section className="py-20 flex items-center justify-between">
-        <div className="w-3/5 ml-8">
+        <div className="w-3/5">
           <h1 className="tracking-wider text-8xl xl:text-9xl font-black text-blueGray-700">
             Fleur <br /> Delights
           </h1>
